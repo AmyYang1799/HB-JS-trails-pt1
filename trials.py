@@ -83,12 +83,14 @@ def has_balanced_parens(string):
     for char in string:
         if char == '(':
             parens += 1
+            print(parens)
         elif char == ')':
             parens -= 1
+            print(parens)
             
-            if parens > 0:
-                return False
-    return parens < 0    
+
+    print(parens)
+    return parens == 0
 
 
 def compress(string):
